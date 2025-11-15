@@ -41,6 +41,7 @@ function getValidOperatorInput(promptMessage) {
   }
 }
 
+// Validate user selection to continue calculate or not
 function exitCalculator(promptMessage) {
   const validInput = ['yes', 'no']
   let isContinue
@@ -121,6 +122,7 @@ while (true) {
       result = 'Unknown operator!'
   }
 
+  // Result to display
   const resultDisplay = result ?? 'Result is undefined or null, something went wrong!'
 
   console.log(`\n🧮 Result: ${resultDisplay}`)
@@ -131,6 +133,7 @@ while (true) {
 
   console.log('📊 Analyzing result...')
 
+  // Get type of result
   const type = result !== null ? typeof result : null
   console.log(`➡️ Data Type: ${type}`)
 
